@@ -59,6 +59,18 @@
       <City>Estes Park</City>
       <State>CO</State>
       <Zip>80517</Zip>
+    </Address>
+  </NationalPark>
+
+  <NationalPark>
+    <Name>Acadia</Name>
+    <Phone>207-288-3338</Phone>
+    <Address NearestAirport="Hancock County-Bar Harbor Airport">
+      <Number>20</Number>
+      <Street>McFarland Hill Drive</Street>
+      <City>Bar Harbor</City>
+      <State>ME</State>
+      <Zip>04609</Zip>
     </AddressX>
   </NationalPark>
 </NationalPark>
