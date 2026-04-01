@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<NationalPark>
+<NationalPark xmlns="http://example.com/NationalParks">
 
   <NationalPark Rating="4.9">
     <Name>Grand Canyon</Name>
