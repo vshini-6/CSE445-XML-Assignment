@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<NationalPark>
+<NationalPark> <!-- ERROR 1: wrong root name -->
+
   <NationalPark Rating="4.9">
     <Name>Grand Canyon</Name>
     <Phone>928-638-7496</Phone>
-    <Phone>888-297-2757</Phone>
-    <Phone>866-499-2574</Phone>
     <Address NearestAirport="FlagStaff">
       <Number>8</Number>
       <Street>S Entrance Road</Street>
@@ -17,7 +16,7 @@
   <NationalPark Rating="4.8">
     <Name>Yellowstone</Name>
     <Phone>307-344-7381</Phone>
-    <Address>
+    <Address> <!-- ERROR 2: missing required attribute -->
       <Number>2</Number>
       <Street>Grand Loop Road</Street>
       <City>Yellowstone National Park</City>
@@ -28,6 +27,7 @@
 
   <NationalPark>
     <Name>Yosemite</Name>
+    <!-- ERROR 3: missing Phone -->
     <Address NearestAirport="Fresno Yosemite International Airport">
       <Number>9035</Number>
       <Street>Village Drive</Street>
@@ -39,7 +39,7 @@
 
   <NationalPark Rating="4.7">
     <Name>Zion</Name>
-    <Name>Zion Duplicate</Name>
+    <Name>Zion Duplicate</Name> <!-- ERROR 4: duplicate Name -->
     <Phone>435-772-3256</Phone>
     <Address NearestAirport="St. George Regional Airport">
       <Number>1</Number>
@@ -50,27 +50,17 @@
     </Address>
   </NationalPark>
 
-  <NationalPark>
-    <Name>Rocky Mountain</Name>
-    <Phone>970-586-1206</Phone>
-    <Address NearestAirport="Denver International Airport">
-      <Number>1000</Number>
-      <Street>US Highway 36</Street>
-      <City>Estes Park</City>
-      <State>CO</State>
-      <Zip>80517</Zip>
-    </Address>
-  </NationalPark>
-
-  <NationalPark>
+  <NationalPark Rating="4.6">
     <Name>Acadia</Name>
     <Phone>207-288-3338</Phone>
     <Address NearestAirport="Hancock County-Bar Harbor Airport">
-      <Number>20</Number>
-      <Street>McFarland Hill Drive</Street>
-      <City>Bar Harbor</City>
-      <State>ME</State>
       <Zip>04609</Zip>
-    </AddressX>
+      <State>ME</State>
+      <City>Bar Harbor</City>
+      <Street>McFarland Hill Drive</Street>
+      <Number>20</Number>
+      <!-- ERROR 5: wrong order of elements -->
+    </Address>
   </NationalPark>
+
 </NationalPark>
