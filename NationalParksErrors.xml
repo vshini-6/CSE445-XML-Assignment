@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<NationalParks> <!-- ERROR 1: wrong root name -->
+<NationalParks>
 
   <NationalPark Rating="4.9">
     <Name>Grand Canyon</Name>
@@ -16,7 +16,7 @@
   <NationalPark Rating="4.8">
     <Name>Yellowstone</Name>
     <Phone>307-344-7381</Phone>
-    <Address> <!-- ERROR 2: missing required attribute -->
+    <Address> <!-- ERROR: missing required attribute -->
       <Number>2</Number>
       <Street>Grand Loop Road</Street>
       <City>Yellowstone National Park</City>
@@ -27,7 +27,7 @@
 
   <NationalPark>
     <Name>Yosemite</Name>
-    <!-- ERROR 3: missing Phone -->
+    <!-- ERROR: missing Phone -->
     <Address NearestAirport="Fresno Yosemite International Airport">
       <Number>9035</Number>
       <Street>Village Drive</Street>
@@ -39,7 +39,7 @@
 
   <NationalPark Rating="4.7">
     <Name>Zion</Name>
-    <Name>Zion Duplicate</Name> <!-- ERROR 4: duplicate Name -->
+    <Name>Zion Duplicate</Name> <!-- ERROR: duplicate Name -->
     <Phone>435-772-3256</Phone>
     <Address NearestAirport="St. George Regional Airport">
       <Number>1</Number>
@@ -59,7 +59,7 @@
       <City>Bar Harbor</City>
       <Street>McFarland Hill Drive</Street>
       <Number>20</Number>
-      <!-- ERROR 5: wrong order of elements -->
+      <!-- ERROR: wrong order of elements -->
     </Address>
   </NationalPark>
 
